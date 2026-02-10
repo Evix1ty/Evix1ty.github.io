@@ -8,69 +8,73 @@
 </head>
 <body>
 
-  <header id="hero">
-    <h1>Your Name</h1>
-    <p>Aspiring Software Developer | Passionate about building innovative solutions.</p>
-    <img src="your-photo.jpg" alt="Your Photo" width="150">
-  </header>
+  <div id="container"> <!-- Centered Container -->
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a dedicated Diploma in Programming (DP2) student at [School Name], eager to apply my skills and knowledge to real-world software development challenges. I'm particularly interested in [mention specific areas like web development, mobile apps, etc.].</p>
-  </section>
+    <header id="hero">
+      <h1>Your Name</h1>
+      <p>Aspiring Software Developer | Passionate about building innovative solutions.</p>
+      <img src="your-photo.jpg" alt="Your Photo" class="profile-image" width="150" style="margin: 0 auto;"> <!-- Centered Image -->
+    </header>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-tabs">
-      <ul class="tab-list">
-        <li><button id="lang-tab" class="active">Languages</button></li>
-        <li><button id="framework-tab">Frameworks/Libraries</button></li>
-        <li><button id="db-tab">Databases</button></li>
-        <li><button id="tool-tab">Tools</button></li>
-      </ul>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a dedicated Diploma in Programming (DP2) student at [School Name], eager to apply my skills and knowledge to real-world software development challenges. I'm particularly interested in [mention specific areas like web development, mobile apps, etc.].</p>
+    </section>
 
-      <div class="skill-content">
-        <ul id="lang-skills">
-          <li>Python</li>
-          <li>Java</li>
-          <li>C++</li>
-          <!-- Add more languages -->
-        </ul>
-        <ul id="framework-skills">
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Django</li>
-          <!-- Add more frameworks -->
-        </ul>
-        <!-- Other skill tabs would have similar lists -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid"> <!-- Grid Layout for Skills -->
+        <div class="skill-item">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+          </ul>
+        </div>
+
+        <div class="skill-item">
+          <h3>Frameworks/Libraries</h3>
+          <ul>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Django</li>
+          </ul>
+        </div>
+
+        <!-- Add more skill items -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Project 1: [Project Name]</h3>
-        <p>[Brief description of the project and its purpose].</p>
-        <a href="project1.html" target="_blank">View on GitHub</a>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project 1: [Project Name]</h3>
+          <p>[Brief description of the project and its purpose].</p>
+          <a href="project1.html" target="_blank">View on GitHub</a>
+        </div>
       </div>
-      <!-- Add more project cards -->
-    </div>
-  </section>
+    </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>[School Name]</strong> - Diploma in Programming (DP2)</p>
-    <p>Expected Graduation: [Date]</p>
-    <p>Relevant Coursework: Data Structures & Algorithms, Software Engineering, Database Systems</p>
-  </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>[School Name]</strong> - Diploma in Programming (DP2)</p>
+      <p>Expected Graduation: [Date]</p>
+      <p>Relevant Coursework: Data Structures & Algorithms, Software Engineering, Database Systems</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: [Your LinkedIn Profile URL]</p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn: [Your LinkedIn Profile URL]</p>
+    </section>
+
+  </div> <!-- End Container -->
+
+</body>
+</html>
+
 
 </body>
 </html>
