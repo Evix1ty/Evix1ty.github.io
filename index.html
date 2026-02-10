@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Resume Website</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header id="hero">
     <h1>Your Name</h1>
     <p>Aspiring Software Developer | Passionate about building innovative solutions.</p>
-    <img src="your-photo.jpg" alt="Your Photo" width="150"> <!-- Replace with your photo -->
+    <img src="your-photo.jpg" alt="Your Photo" width="150">
   </header>
 
   <section id="about">
@@ -21,25 +21,41 @@
 
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> Python, Java, C++</li>
-      <li><strong>Frameworks/Libraries:</strong> React, Node.js, Django</li>
-      <li><strong>Databases:</strong> SQL, MongoDB</li>
-      <li><strong>Tools:</strong> Git, Docker</li>
-    </ul>
+    <div class="skill-tabs">
+      <ul class="tab-list">
+        <li><button id="lang-tab" class="active">Languages</button></li>
+        <li><button id="framework-tab">Frameworks/Libraries</button></li>
+        <li><button id="db-tab">Databases</button></li>
+        <li><button id="tool-tab">Tools</button></li>
+      </ul>
+
+      <div class="skill-content">
+        <ul id="lang-skills">
+          <li>Python</li>
+          <li>Java</li>
+          <li>C++</li>
+          <!-- Add more languages -->
+        </ul>
+        <ul id="framework-skills">
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Django</li>
+          <!-- Add more frameworks -->
+        </ul>
+        <!-- Other skill tabs would have similar lists -->
+      </div>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div>
-      <h3>Project 1: [Project Name]</h3>
-      <p>[Brief description of the project and its purpose].</p>
-      <a href="project1.html">View on GitHub</a> <!-- Link to your project repository -->
-    </div>
-    <div>
-      <h3>Project 2: [Project Name]</h3>
-      <p>[Brief description...] </p>
-      <a href="project2.html">View on GitHub</a>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project 1: [Project Name]</h3>
+        <p>[Brief description of the project and its purpose].</p>
+        <a href="project1.html" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Add more project cards -->
     </div>
   </section>
 
@@ -59,7 +75,3 @@
 </body>
 </html>
 
-    </footer>
-
-</body>
-</html>
